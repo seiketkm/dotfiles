@@ -16,6 +16,5 @@ bind -c resize k eval 'resize -1' 'command -c resize'
 # unused screen lock
 bind x
 bind ^x
-bind X kill
 
 
