@@ -1,4 +1,5 @@
 autodetach on
+escape ^t^t
 bell_msg "^G"
 defkanji utf-8
 defencoding utf-8
@@ -12,3 +13,9 @@ bind r eval 'echo "Resize region:"' 'command -c resize'
 bind -c resize ^] command
 bind -c resize j eval 'resize +1' 'command -c resize'
 bind -c resize k eval 'resize -1' 'command -c resize'
+# unused screen lock
+bind x
+bind ^x
+bind X kill
+
+
