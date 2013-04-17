@@ -1,0 +1,39 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly":true,
+  "eqeqeq": true,
+  "forin":true, 
+  "immed": true,
+//  "indent":2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+//  "nonew": true,
+  "plusplus": true,
+//  "quotmark": single,
+// "reqexp": true,
+  "undef": true,
+  "unused": true,
+//  "strict": true,
+  "trailing": true,
+//  "maxparams": 5,
+//  "maxdepth": 5,
+//  "maxstatements": 5,
+//  "maxcomplexity": 5,
+//  "maxlen": 80,
+
+  "laxcomma": true,
+  
+  "browser":true,
+  "devel":true,
+  "jquery":true,
+  "maxerr":50,
+  "globals" : {
+  	"Backbone": false,
+	"_": false,
+        "JST": false,
+        "App": true
+  }
+}
