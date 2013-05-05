@@ -18,3 +18,7 @@ bind x
 bind ^x
 bind o focus
 
+bindkey -k ku stuff ^[OA
+bindkey -k kd stuff ^[OB
+bindkey -k kr stuff ^[OC
+bindkey -k kl stuff ^[OD
