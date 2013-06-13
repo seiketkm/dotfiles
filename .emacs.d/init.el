@@ -53,6 +53,9 @@
 (require 'ido)
 (ido-mode t)
 
+;; space preview
+(global-whitespace-mode 1)
+
 (define-key function-key-map "\eOA" [up])
 (define-key function-key-map "\e[A" [up])
 (define-key function-key-map "\eOB" [down])
