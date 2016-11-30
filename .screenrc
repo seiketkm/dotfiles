@@ -7,14 +7,23 @@ encoding utf-8 utf-8
 defscrollback 10000
 startup_message off
 vbell off
-# caption always "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} [%l] %{=b wb}%y/%m/%d(%D) %{=b wm}%c"
 caption always "%?%F%{= rw}%:%{= bw}%?%H %-w%?%F%{=bu dk}%:%{=bu dc}%?%n %t%{-}%+w"
 
 bell_msg "Bell in window %^G"
-bind r eval 'echo "Resize region:"' 'command -c resize'
-bind -c resize ^] command
-bind -c resize j eval 'resize +1' 'command -c resize'
-bind -c resize k eval 'resize -1' 'command -c resize'
+
+# region
+bind r eval 'echo "Focus move:"' 'command -c operate'
+bind -c operate k eval 'focus up' 'command -c operate'
+bind -c operate h eval 'focus left' 'command -c operate'
+bind -c operate j eval 'focus down' 'command -c operate'
+bind -c operate l eval 'focus right' 'command -c operate'
+bind -c operate  eval 'resize +1' 'command -c resize'
+## change screen size
+bind -c operate + eval 'resize -v +1' 'command -c operate'
+bind -c operate - eval 'resize -v -1' 'command -c operate'
+bind -c operate > eval 'resize -h +1' 'command -c operate'
+bind -c operate < eval 'resize -h -1' 'command -c operate'
+
 # unused screen lock
 bind x
 bind ^x
