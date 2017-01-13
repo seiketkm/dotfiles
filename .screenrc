@@ -10,7 +10,7 @@ vbell off
 caption always "%?%F%{= rw}%:%{= bw}%?%H %-w%?%F%{=bu dk}%:%{=bu dc}%?%n %t%{-}%+w"
 
 bell_msg "Bell in window %^G"
-
+mousetrack on
 # region
 bind r eval 'echo "Focus move:"' 'command -c operate'
 bind -c operate k eval 'focus up' 'command -c operate'
